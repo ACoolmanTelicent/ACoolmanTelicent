@@ -8,14 +8,14 @@
 
 In the pantheon of holy knowledge transfer techniques:
 
-1. Automation (of outcomes)
+1. 🏆 Automation (of outcomes)
   - The Holygrail of full automation may not exist but its worth the questing to find it
   - **Example**:  one command gathers input then runs every app in any environment
-2. Contextual docs/help
+2. 👼 Contextual docs/help
   - A slight compromise is when the process/idea largely drives itself, but relevant info is added when its needed
   - **Example**: IF telicent-cli stderr includes "network <sha> not found>" THEN display "Try 'docker network prune'"
   - **Example**: Project repo description should always be up to date
-3. Documentation
+3. 📜 Documentation
   - This is a large compromise
   - Some docs are probably better than nothing, but _sometimes_, even _no docs_ are better than some docs
 
