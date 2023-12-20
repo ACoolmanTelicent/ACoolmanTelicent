@@ -28,3 +28,5 @@ And of course unholy attributes - e.g. dependencies that are not enforced - like
 
 
 We shouldn't be patting ourselves on the back for creating documentation, we should be celebrating how/when our teammates achieve outcomes
+
+Idle thought: I'd really love a file watched on yarn.lock that give me a big notification saying "Yo, you just changed yarn.lock"
