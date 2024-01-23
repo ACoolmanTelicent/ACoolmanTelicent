@@ -4,6 +4,12 @@
 - 💞️ I’m looking to collaborate on ___
 - 📫 How to reach me probably Frontend team "wall"
 
+# On communication style
+
+I'll try and be precise by default.
+
+But if I can't think of anything better to do, I'll end up _biasing toward action_ BUT with some time, care and effort put aside for cleaning up any confusion I cause.
+
 # On docs
 
 In the pantheon of holy knowledge transfer techniques:
