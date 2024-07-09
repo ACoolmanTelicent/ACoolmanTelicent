@@ -36,3 +36,9 @@ And of course unholy attributes - e.g. dependencies that are not enforced - like
 We shouldn't be patting ourselves on the back for creating documentation, we should be celebrating how/when our teammates achieve outcomes
 
 Idle thought: I'd really love a file watched on yarn.lock that give me a big notification saying "Yo, you just changed yarn.lock"
+
+
+# On development primitives
+
+- **Commit messages**: although relatively permanent, don't self-surface (especially when squashed), and not accessible to non-engineers. Don't over rely.
+- **Unit tests**: Much more worth if done with T.D.D, but T.D.D depends on clear requirements. It is still worth writing tests after the fact.
