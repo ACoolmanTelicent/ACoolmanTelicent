@@ -12,33 +12,21 @@ But if I can't think of anything better to do, I'll end up _biasing toward actio
 
 # On docs and code-comments
 
-In the pantheon of holy knowledge transfer techniques:
+We shouldn't be patting ourselves on the back for creating documentation
 
-**Higher in list is better; Lower number is worse**
-
-1. 🏆 No need for docs = The Holygrail is no need for docs
+1. 🏆 **BEST** No need for docs
     - A process might be automated
     - Code might be self-explanatory
-2. 👼 Contextual docs/help = Compromised
-  - The process/idea largely anticipatable itself, but relevant plugs any gaps
-  - **Example**: IF telicent-cli stderr includes "network <sha> not found>" THEN display "Try 'docker network prune'"
+2. 👼 **OK** Contextual docs/help = Compromised
+      - The process/idea largely anticipatable itself, but relevant plugs any gaps
+      - **Example**: IF telicent-cli stderr includes "network <sha> not found>" THEN display "Try 'docker network prune'"
   - **Example**: The code links to outside intentions - an ever-green comment about intention could be a cheap/quick solution
-3. 📜 Detailed accurate Documentation = One missed update cycle away from #5
-  - Just because docs exist, does not mean they will read and interpreted as the writer intended.
-4. 📜 No docs
-  - No information is better than mis-information
-5. 📜 Inaccurate/degraded docs = One missed update cycle away from #3
-  - No information is better than mis-information
-
-Then each of these techniques can have holy attributes. For instance:
-- conventional/idiomatic: lessen the need for docs, and make editing automation easier). 
-- discoverable: docs/help/automation scripts that are easily found are better than those that are hard to find
- 
-And of course unholy attributes - e.g. dependencies that are not enforced - like test failures that don't block PR
-
-We shouldn't be patting ourselves on the back for creating documentation, we should be celebrating how/when our teammates achieve outcomes
-
-Idle thought: I'd really love a file watched on yarn.lock that give me a big notification saying "Yo, you just changed yarn.lock"
+3. 📜 **RISKY**  Detailed accurate Documentation = One missed update cycle away from #5
+      - Just because docs exist, does not mean they will read and interpreted as the writer intended.
+4. **VERY RISK** No docs when they are needed
+      - No information is better than mis-information
+5. 📜 **VERY RISK** Inaccurate/degraded/unfindable docs = One missed update cycle away from #3
+      - No information is better than mis-information
 
 # On development primitives
 
