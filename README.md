@@ -23,10 +23,9 @@ We shouldn't be patting ourselves on the back for creating documentation
   - **Example**: The code links to outside intentions - an ever-green comment about intention could be a cheap/quick solution
 3. 📜 **RISKY**  Detailed accurate Documentation = One missed update cycle away from #5
       - Just because docs exist, does not mean they will read and interpreted as the writer intended.
-4. **VERY RISK** No docs when they are needed
-      - No information is better than mis-information
-5. 📜 **VERY RISK** Inaccurate/degraded/unfindable docs = One missed update cycle away from #3
-      - No information is better than mis-information
+4. **VERY RISKY** 
+    - No docs when they are needed OR,
+    - Inaccurate/degraded/unfindable docs = One missed update cycle away from #3 (No information is better than mis-information)
 
 # On development primitives
 
