@@ -1,8 +1,8 @@
 - 👋 Hi, I’m @ACoolmanTelicent
 - 👀 I’m interested in making pedestrian things automated, and valuable problems front and center
-- 🌱 I’m currently learning about Telicent
-- 💞️ I’m looking to collaborate on ___
-- 📫 How to reach me probably Frontend team "wall"
+- 🌱 I’m currently learning about home labbing
+- 💞️ I’m looking to collaborate on DX
+- 📫 How to reach me is MS Teams
 
 # On communication style
 
