@@ -10,38 +10,53 @@ I'll try and be precise by default.
 
 But if I can't think of anything better to do, I'll end up _biasing toward action_ BUT with some time, care and effort put aside for cleaning up any confusion I cause.
 
-# On docs and code comments
+# Docs & process — the pantheon (aim & cost)
 
-Let’s prefer outcomes that remove the need for docs, then add only what helps in the moment.
-
----
-
-## 🏆 BEST — No docs needed
-- **Automate the task** so nobody needs to look anything up. See: [Toil (Google SRE)](https://sre.google/sre-book/toil/).
-- **Make code speak for itself** (clear names, small functions). Comments should explain **why**, not **what**: [Google style — comments](https://google.github.io/styleguide/jsguide.html#js-comments).
+**Assume zero comments.** Make the thing clear enough that nothing needs explaining.  
+**Code is written once, read many times** ([why readability matters](https://martinfowler.com/bliki/CodeAsDocumentation.html)).
 
 ---
 
-## 👼 OK — Contextual help (a practical compromise)
-- **Inline, just-in-time hints** that unblock the user where errors occur. See: [Contextual Help](https://www.nngroup.com/articles/contextual-help/) and [Error-Message Guidelines](https://www.nngroup.com/articles/error-message-guidelines/) (NN/g).
-- **Example:** if `telicent-cli` stderr includes `network <sha> not found`, suggest `docker network prune`.
-- **Evergreen intent comments**: short notes that link to rationale or policy when it prevents confusion.
+## 🏆 BEST — No reading needed
+- Automate the step; make the UI/CLI guide the next action ([toil → automate](https://sre.google/sre-book/toil/)).
+- **Cost later:** lowest. Nothing to maintain.
+
+## 👼 OK — In-flow cues (just-in-time)
+- Short hints and error remedies at the point of failure ([contextual help](https://www.nngroup.com/articles/contextual-help/)).
+- **Cost later:** low. Lives next to the code/path.
+
+## ✅ OK — Process aids (tight, execution-focused)
+- Small checklists, scripts, or templates for repeatable work (e.g., “integration setup”, “run this meeting”).
+- Prefer executable or templated forms over prose ([checklists work](https://www.nejm.org/doi/full/10.1056/NEJMsa0810119)).
+- **Cost later:** low–medium. Tied to workflow; easy to version with the thing it supports.
+
+## 📜 RISKY — Long guides / narratives
+- Multi-page “how it works” or policy write-ups.
+- **Cost later:** high drift, search friction, easy to misread. Use only when shorter forms cannot do the job.
+
+## ❗ VERY RISKY — Gaps or rot
+- Missing when needed, or outdated/wrong/hard to find.
+- **Cost later:** wasted time, bad choices, loss of trust.
 
 ---
 
-## 📜 RISKY — Heavy/long-form docs
-- **High maintenance**: one missed update and it’s stale.
-- **Low uptake**: existence ≠ understanding. Organize by need with a clear model like [Diátaxis](https://diataxis.fr/) (tutorials, how-to, reference, explanation).
+## Choose by attributes (apply holistically)
+- **Frequency:** frequent + repeatable → automate; rare + critical → small, in-flow cue or short checklist.
+- **Variability:** stable → encode in types/scripts; fast-changing → keep guidance tiny and local.
+- **Ambiguity:** if people guess wrong, add one line that removes guesswork.
+- **Impact:** high-cost mistakes → fail fast with the fix; low-cost → rely on clearer naming/structure.
+- **Source of truth:** keep facts in code, schemas, or scripts; don’t duplicate them in prose.
+- **Lifespan:** long-lived intent → encode it; short-lived tips → keep them near the point of use.
 
 ---
 
-## ❗ VERY RISKY — Missing or misleading docs
-- **Missing when needed** forces guesswork.
-- **Outdated or wrong** actively misleads; sometimes **no doc is safer** than a bad one. Prefer automation or targeted, in-context help over big docs.
+## Simple rules
+- Make code and names carry **what**; let small cues/checklists cover **next step**.
+- Prefer executable truth (types, schemas, scripts) over prose you must babysit.
+- Keep anything written **short, local, and versioned** with the thing it explains.
+- Delete or regenerate when the source changes.
 
----
 
-**Rule of thumb:** automate first; add small, contextual guidance where it saves time; keep long docs rare, accurate, and clearly structured.
 
 # On development primitives
 
