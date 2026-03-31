@@ -12,7 +12,7 @@ But if I can't think of anything better to do, I'll end up _biasing toward actio
 
 # Docs & process — the pantheon (aim & cost)
 
-**Assume zero comments.** Make the thing clear enough that nothing needs explaining.  
+**Bias toward zero comments.** Make the thing clear enough that nothing needs explaining.  
 **Code is written once, read many times** ([why readability matters](https://martinfowler.com/bliki/CodeAsDocumentation.html)).
 
 ---
